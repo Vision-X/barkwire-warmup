@@ -20,5 +20,5 @@ function buildElements(dog) {
     <h2>${dog.name}</h2>
     <img src="${dog.imageUrl}"</img>
     <small>${dog.description}</small>
-   </li>`
+  </li>`
 };
