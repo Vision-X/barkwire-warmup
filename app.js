@@ -2,15 +2,12 @@ function getShit() {
   fetch("http://barkwire-api.herokuapp.com/dogs")
     .then(res => res.json())
     .then(sortDog)
-}
+};
 
 getShit();
 
 function sortDog(res) {
-  const cage = document.querySelector('#dog-cage');
-  res.dogs.map(buildElements)
-    // cage.appendChild(dog);
-    // console.log(dog);
+  res.dogs.map(buildElements);
 };
 
 function buildElements(dog) {
@@ -20,5 +17,5 @@ function buildElements(dog) {
     <h2>${dog.name}</h2>
     <img src="${dog.imageUrl}"</img>
     <small>${dog.description}</small>
-  </li>`
+  </li>`;
 };
